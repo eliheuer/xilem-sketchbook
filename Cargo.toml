@@ -1,0 +1,16 @@
+[package]
+name = "xilem-sketchbook"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+xilem   = { git = "https://github.com/linebender/xilem.git" }
+masonry = { git = "https://github.com/linebender/xilem.git" }
+winit = "0.30.5"
+norad = "0.14.1"
+
+
+[[example]]
+name = "hello_world"
+path = "examples/hello_world.rs"
