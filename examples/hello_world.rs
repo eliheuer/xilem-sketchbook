@@ -10,7 +10,7 @@ struct AppState {
 fn app_logic(state: &mut AppState) -> impl WidgetView<AppState> {
     flex((
         button("-", |state: &mut AppState| state.count -= 1),
-        label(format!("Count: {}", state.count)),
+        label(format!("Count: {}", state.count)).text_size(64.0),
         button("+", |state: &mut AppState| state.count += 1),
     ))
     .direction(Axis::Vertical)
