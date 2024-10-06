@@ -13,7 +13,7 @@ fn app_logic(state: &mut AppState) -> impl WidgetView<AppState> {
         label(format!("Count: {}", state.count)),
         button("+", |state: &mut AppState| state.count += 1),
     ))
-    .direction(Axis::Horizontal)
+    .direction(Axis::Vertical)
 }
 
 fn main() {
